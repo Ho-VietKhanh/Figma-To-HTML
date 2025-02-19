@@ -1,2 +1,2 @@
 Link Figma Dự Án
-https://www.figma.com/design/3kHcuu3c8fvhnA2q2wUwBM/1.Learning-landing-page?node-id=0-1&p=f&t=mAccmrk46sxm93TC-0
+https://www.figma.com/design/pOu7xW5Qdfdb69JoP781KF/01.duan-01-Learning-landing-page-tuhoc.cc?node-id=4-202&m=dev
