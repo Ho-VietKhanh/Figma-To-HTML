@@ -22,6 +22,16 @@ a{
     text-decoration: none;
 }
 
+.heading-lv2{
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 127%; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+/* Đại diện cho phần nút bấm */
 .btn{
     display: inline-block;
     min-width: 118px;
@@ -34,11 +44,13 @@ a{
     border-radius: 999px;
     background: #171100;
 }
-
+/* Độ mờ khi rê chuột vào nút bấm */
 .btn:hover{
+    cursor: pointer;
     opacity: 0.9;
 }
 
+/* Kích cỡ cơ bản của khối main-contain */
 .main-content{
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -46,11 +58,12 @@ a{
     margin-right: auto;
     
 }
-.header{
-    background: #FFFCF4;
-}
+
+/* Làm phần background cho header */
+
 
 .header.fixed{
+    background: #FFFCF4;
     z-index: 1;
     position: sticky;
     top: -28px;
@@ -61,6 +74,7 @@ a{
     align-items: center;
     padding: 36px 0px 8px;
 }
+
 .nav{
     margin-left: auto;
 }
@@ -105,11 +119,7 @@ header .btn-sign-up{
     margin-left: 49px;
 }
 
-
-.cta-group .btn{
-    background-color: tomato;
-}
-
+/* ---------------Hero------------- */
 .hero{
     padding:56px 0 65px ;
     background: #FFFCF4;
@@ -119,16 +129,13 @@ header .btn-sign-up{
     display: flex;
 }
 
+/* ---------------Hero Left------------- */
 .hero .media-block{
     position: relative;
     width: 48%; 
     /* Vì chiều rộng của một main content là 1170 nên ta lấy phần trăm giữa độ rộng của khối đó với khối main content là 570 / 1170 == 48% */
 }
 
-.hero .content-block{
-    width: 52%;
-    /* Khối media-block chiếm 48% thì khối content block còn lại chiếm 52% */
-}
 
 .hero .media-block .img{
         width: 470px;
@@ -151,6 +158,11 @@ header .btn-sign-up{
 .hero-summary .item{
     align-items: center;
     display: flex;
+}
+
+.hero-summary .item + .item{ 
+    /*Nó sẽ tác động vào các item ĐỨNG SAU item khác và dĩ nhiên vì item t1 không đứng sau thằng nào nên nó sẽ bắt đầu từ item 2  */
+    margin-top: 22px;
 }
 
 .hero-summary .icon{
@@ -188,13 +200,10 @@ header .btn-sign-up{
     line-height: 167%; /* 166.667% */
 }
 
-.hero-summary .item + .item{ 
-    /*Nó sẽ tác động vào các item ĐỨNG SAU item khác và dĩ nhiên vì item t1 không đứng sau thằng nào nên nó sẽ bắt đầu từ item 2  */
-    margin-top: 22px;
-}
+/* ---------------Hero Right------------- */
 
 .hero .content-block{
-    width: 52%;
+    width: 52%;/* Khối media-block chiếm 48% thì khối content block còn lại chiếm 52% */
     padding-left: 130px;
     padding-top: 46px;
 }
@@ -275,3 +284,135 @@ header .btn-sign-up{
 .hero .descAmount{
     margin-top: 8px;
 }
+
+/*--------------popular--------------  */
+/*--------------popular top--------------  */
+
+.popular{
+    padding: 65px;
+    margin-top: 135px;
+}
+
+.popular .top-left .desc{
+    margin-top: 16px;
+    width: 458px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    line-height: 167%; /* 166.667% */
+}
+
+.popular .popular-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular .controls{
+    display: flex;
+    gap: 18px;
+}
+
+.popular .top-right .control-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.popular .top-right .control-btn:hover{
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+/*--------------popular Bottom ( Course List )--------------  */
+.popular .course-list{
+    margin-top: 55px;
+    gap: 30px;
+    display: flex;
+}
+
+.popular .course-list .course-item{
+    border-radius: 12px;
+    border: 1px solid #E2DFDA;
+    background: #FFF;
+}
+
+.popular .course-list .course-item:hover{
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular .course-list .thumb{
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+    height: 278px;
+    object-fit: cover;
+}
+
+.popular .course-item .info{
+    padding: 16px 22px 22px 22px;
+}
+
+.popular .course-item .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .course-item .title a{
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 167%; /* 166.667% */
+}
+
+.popular .course-item .rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .rating .avalue{
+    margin-left: 6px;
+    color: #FEA31B;
+    font-size: 1.6rem;
+    line-height: 175%; /* 175% */
+}
+
+.popular .course-item .info .desc{
+    margin-top: 6px;
+    color: #5F5B53;
+    font-size: 1.4rem;
+    line-height:186%; /* 185.714% */
+}
+
+.popular .course-item .info .foot{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .course-item .info .foot .price{
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 167%; /* 166.667% */
+}
+
+.popular .course-item .info .foot .btn-book{
+    border: none;
+}
+
+.popular .course-item .info .foot .btn-book:hover{
+    background-color: var(--primary-color);
+}
+
