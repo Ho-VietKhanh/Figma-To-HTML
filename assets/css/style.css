@@ -299,7 +299,7 @@ header .btn-sign-up{
     margin-top: 8px;
 }
 
-/*--------------popular--------------  */
+/*--------------popular--------------------------------------------------------------  */
 /*--------------popular top--------------  */
 
 .popular{
@@ -509,4 +509,94 @@ header .btn-sign-up{
 .feedback .feedback-list{
     display: flex;
     overflow: hidden;
+}
+
+
+/* -------------------------------Features------------------------------------------ */
+/* -------------------------------Features 1------------------------------------------ */
+
+.features1{
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.features1 .body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.features1 .image{
+    display: flex;
+    gap: 30px;
+}
+
+.features1 img{
+    width: 270px;
+    height: 405px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.features1 .image .lower{
+    margin-top: 34px;
+}
+
+.features1 .content{
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features1 .content .desc{
+    margin-top: 16px;
+    color: #5F5B53;
+    font-size: 1.6rem;
+    line-height: 175% /* 175% */
+}
+
+.features1 .content .cta-btn{
+    margin-top: 32px;
+    width: 137px;
+    height: 50px;
+    background: var(--primary-color)
+}
+
+/* -------------------------------Features 2------------------------------------------ */
+.features2{
+    margin-top: 70px;
+    padding: 65px 0px;
+}
+
+.features2 .body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.features2 .image img{
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.features2 .content{
+    width: 49%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features2 .content .desc{
+    margin-top: 16px;
+    color: #5F5B53;
+    font-size: 1.6rem;
+    line-height: 175%; /* 175% */
+}
+
+.features2 .content .cta-btn{
+    margin-top: 32px;
+    width: 137px;
+    height: 50px;
+    background-color: var(--primary-color);
 }
