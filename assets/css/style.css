@@ -622,13 +622,15 @@ header .btn-sign-up{
 }
 
 .blog .blog-list{
+    overflow: hidden;
     display: flex;
     margin-top: 55px;
     gap: 30px ;
 }
 
 .blog .blog-list .item{
-    width: 33.33%;
+    flex-shrink: 0;
+    width: calc(33.33% - 20px);
     border-radius: 16px;
     background: #FFF;
 }
@@ -638,7 +640,7 @@ header .btn-sign-up{
 }
 
 .blog .blog-list .thumb{
-    width: 370px;
+    width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 16px 16px 0px 0px;
@@ -690,8 +692,29 @@ header .btn-sign-up{
 
 .blog .blog-list .item .btn{
     margin-top: 12px;
+    font-size: 1.4rem;
 }
 
 .blog .blog-list .item .btn:hover{
     background: var(--primary-color);
+}
+
+.blog .dots{
+    justify-content: center;
+    display: flex;
+    gap: 6px;
+    margin-top: 38px;
+}
+
+.blog .dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5F5B53;
+    cursor: pointer;
+}
+
+.blog .dot.active{
+    background: var(--primary-color);
+    cursor: default;
 }
